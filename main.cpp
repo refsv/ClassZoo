@@ -4,7 +4,7 @@
 int main() {
     int categoryChoice;
     int animalChoice;
-    
+
     std::cout << "Select a category of animals:" << std::endl;
     std::cout << "1. Amphibians" << std::endl;
     std::cout << "2. Fish" << std::endl;
@@ -44,7 +44,7 @@ int main() {
     std::cout << i << ". " << animalNames[categoryChoice-1][i-1] << std::endl;
 }
 
-    // Запрос у пользователя выбора конкретного животного
+
     std::cout << "Enter the number of the animal: ";
     std::cin >> animalChoice;
 
@@ -53,7 +53,7 @@ int main() {
         std::cin >> animalChoice;
     }
 
-    // Вывод информации о выбранном животном
+
     std::string selectedAnimalName = animalNames[categoryChoice-1][animalChoice-1];
     std::string selectedAnimalUkrainianName = animalUkrainianNames[categoryChoice-1][animalChoice-1];
 
